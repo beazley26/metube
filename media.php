@@ -24,10 +24,11 @@ if(isset($_GET['id'])) {
 	$filepath=$result_row[4]; 
 	$type=$result_row[2];
 	$description=$result_row[5];
+	$title=$result_row[6];
 	if(substr($type,0,5)=="image") //view image
 	{
-		echo "Viewing Picture:";
-		echo $result_row[4]; ?>
+		?> <h2><?php echo "Viewing Picture:";
+		echo $title; ?></h2>
 		<p><?php echo "<img src='".$filepath."'/>"; ?></p>
 		<p><?php echo $description;?></p><?php
 	}
