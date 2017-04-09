@@ -44,6 +44,14 @@ if(!file_exists($dirfile))
 						  or die("Insert into Media error in media_upload_process.php " .mysql_error());
 					$result="0";
 					chmod($upfile, 0644);
+					
+					//insert tags into tag table
+					$tags=explode(",",$_POST['tags']);
+					$num=count($tags);
+					$media_row=mysql_fetch_row($quearyresult);
+					for($i=0;$i<$num;$i++) {
+						$insert2="insert into tags(mediaid,tag)"."values('$media_row[3]','$tags[$i]')";
+					}
 				}
 			}
 			else  
