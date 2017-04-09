@@ -28,9 +28,7 @@ if(isset($_GET['id'])) {
 	{
 		echo "Viewing Picture:";
 		echo $result_row[4];
-		echo "\n";
 		echo "<img src='".$filepath."'/>";
-		echo "\n";
 		echo $description;
 	}
 	else //view movie
