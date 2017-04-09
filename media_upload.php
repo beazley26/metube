@@ -18,7 +18,11 @@ session_start();
    <input  name="file" type="file" size="50" /> <br>
    Description:
    <input name="description" type="text" /> <br>
-	<input value="Upload" name="submit" type="submit" />
+
+   Add Tags (separate by commas):
+   
+   
+   <input value="Upload" name="submit" type="submit" />
   </p>
  
                 
