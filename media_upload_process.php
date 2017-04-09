@@ -39,7 +39,7 @@ if(!file_exists($dirfile))
 				{
 					//insert into media table
 					$insert = "insert into media(mediaid, filename,username,type,path,description,title)".
-							  "values(NULL,'". urlencode($_FILES["file"]["name"])."','$username','".$_FILES["file"]["type"]."', '$upfile','".$_POST['description']."','".POST['title']."')";
+							  "values(NULL,'". urlencode($_FILES["file"]["name"])."','$username','".$_FILES["file"]["type"]."', '$upfile','".$_POST['description']."','".$_POST['title']."')";
 					$queryresult = mysql_query($insert)
 						  or die("Insert into Media error in media_upload_process.php " .mysql_error());
 					$result="0";
