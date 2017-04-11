@@ -46,8 +46,7 @@ if(!file_exists($dirfile))
 					chmod($upfile, 0644);
 					
 					//insert tags into tag table
-					$tags=explode(",",$_POST['tags']);
-					echo $tags;
+					$tags=explode(",",$_POST['tags'];
 					$num=count($tags);
 					$media_row=mysql_fetch_row($quearyresult);
 					for($i=0;$i<$num;$i++) {

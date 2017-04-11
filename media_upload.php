@@ -19,7 +19,7 @@ session_start();
    Title:
    <input name="title" type="text" /> <br>
    Description:
-   <input name="description" type="text" /> <br>
+   <textarea name="description" cols="50" rows="5" /> <br>
    Add Tags (separate by commas):
    <input name="tags" type="text" /> <br>
    
