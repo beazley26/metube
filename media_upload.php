@@ -21,10 +21,9 @@ session_start();
    <h4> Description: </h4>
    <p> <textarea name="description" cols="50" rows="5"></textarea> <br> </p>
    <h4>Add Tags (separate by commas):</h4>
-   <p><input name="tags" type="text" /> <br>
+   <p><input name="tags" type="text" /> <br> </p>
    
-   <input value="Upload" name="submit" type="submit" />
-  </p>
+   <p><input value="Upload" name="submit" type="submit" /> </p>
  
                 
  </form>
