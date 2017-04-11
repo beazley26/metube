@@ -15,13 +15,13 @@ session_start();
   <p style="margin:0; padding:0">
   <input type="hidden" name="MAX_FILE_SIZE" value="10485760" />
    Add a Media: <label style="color:#663399"><em> (Each file limit 10M)</em></label><br/>
-   <input  name="file" type="file" size="50" /> <br>
-   Title:
-   <input name="title" type="text" /> <br>
-   Description:
-   <textarea name="description" cols="50" rows="5"></textarea> <br>
-   Add Tags (separate by commas):
-   <input name="tags" type="text" /> <br>
+   <input  name="file" type="file" size="50" /> <br> </p>
+   <h4> Title: </h4>
+   <p><input name="title" type="text" /> <br> </p>
+   <h4> Description: </h4>
+   <p> <textarea name="description" cols="50" rows="5"></textarea> <br> </p>
+   <h4>Add Tags (separate by commas):</h4>
+   <p><input name="tags" type="text" /> <br>
    
    <input value="Upload" name="submit" type="submit" />
   </p>
