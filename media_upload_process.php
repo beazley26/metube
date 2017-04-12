@@ -45,7 +45,7 @@ if(!file_exists($dirfile))
 					chmod($upfile, 0644);
 					
 					//insert tags into tag table
-					$tags=explode(",",$_POST['tags']);
+					/*$tags=explode(",",$_POST['tags']);
 					$num=count($tags);
 					$get_row=mysql_insert_id($querryresult);
 					$media_row=mysql_fetch_row($get_row);
@@ -53,7 +53,7 @@ if(!file_exists($dirfile))
 						$insert2="insert into tags(mediaid,tag)"."values('$media_row[3]','$tags[$i]')";
 						$query2=mysql_query($insert2)
 							or die("Insert into Tags error in media_upload_process.php " .mysql_error());
-					}
+					} */
 					$result="0";
 				}
 			}
