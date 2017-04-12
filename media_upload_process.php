@@ -48,7 +48,7 @@ if(!file_exists($dirfile))
 					//insert tags into tag table
 					$tags=explode(",",$_POST['tags'];
 					$num=count($tags);
-					$media_row=mysql_fetch_row($quearyresult);
+					$media_row=mysql_fetch_row($queryresult);
 					for($i=0;$i<$num;$i++) {
 						$insert2="insert into tags(mediaid,tag)"."values('$media_row[3]','$tags[$i]')";
 					}
