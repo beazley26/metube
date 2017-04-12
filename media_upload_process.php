@@ -50,7 +50,7 @@ if(!file_exists($dirfile))
 					$media_row=mysql_fetch_row($queryresult);
 					for($i=0;$i<$num;$i++) {
 						$insert2="insert into tags(mediaid,tag)"."values('$media_row[3]','$tags[$i]')";
-						$query2=mysql_query($insert2);
+						$query2=mysql_query($insert2)
 							or die("Insert into Tags error in media_upload_process.php " .mysql_error());
 					}
 					$result="0";
